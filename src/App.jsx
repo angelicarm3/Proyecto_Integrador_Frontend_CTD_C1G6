@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom'
+import Admin from './pages/Admin'
+import AdminPanel from './Common/Components/AdminPanel/AdminPanel'
 
 import './App.css'
 // import Navbar from './containers/navbar/Navbar.jsx'
@@ -23,6 +25,8 @@ function App () {
         <Route element={<LayoutWithNavbarAndFooter />}>
           <Route path='/' element={<Home />} />
         </Route>
+        <Route path='/AdminPanel' element={<AdminPanel />} />
+        <Route path='/products' element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
