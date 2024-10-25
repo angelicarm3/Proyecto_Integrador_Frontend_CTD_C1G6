@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom'
 
 import './App.css'
 // import Navbar from './containers/navbar/Navbar.jsx'
-// import Footer from './containers/footer/Footer.jsx'
+import Footer from './Common/Components/Footer/Footer'
 import Home from './pages/home/components/Home'
 
 function App () {
@@ -12,7 +12,7 @@ function App () {
         <h1 className='title'>Hola mundo</h1>
         {/* <Navbar /> */}
         <Outlet />
-        {/* <Footer /> */}
+        {<Footer />}
       </div>
     )
   }

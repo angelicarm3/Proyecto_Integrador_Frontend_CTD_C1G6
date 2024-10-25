@@ -1,11 +1,7 @@
 
 import React from "react";
 import {FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp} from 'react-icons/fa'
-<<<<<<< HEAD
-import isoG from './img/isoG.svg';
-=======
-import isoG from "../img/isoG.svg"
->>>>>>> e4a266f2604a0628b2cf75b1df858a1c1daf29a9
+import isoG from "./img/isoG.svg"
 
 const sections =[
     {
