@@ -23,6 +23,7 @@ import AdminUsers from './components/Pages/AdminUsers/AdminUsers.jsx'
 
 import ImagesPopUp from './components/Templates/ImagesPopUp/ImagesPopUp.jsx'
 import RentNowPopUp from './components/Templates/RentNowPopUp/RentNowPopUp.jsx'
+import Bookings from './components/Pages/Bookings/Bookings.jsx'
 
 function App () {
   const location = useLocation()
@@ -56,7 +57,8 @@ function App () {
           <Route path='producto/:id' element={<ProductDetail />} />
           <Route path='inicio-sesion' element={<RequireNoAuth><LoginRegister /></RequireNoAuth>} />
           <Route path='registro' element={<RequireNoAuth><LoginRegister /></RequireNoAuth>} />
-          <Route path='mis-favoritos' element={<RequireAuth><Favorites /></RequireAuth>} />
+          <Route path='mis-favoritos' element={<Favorites />} />
+          <Route path='mis-reservas' element={<Bookings />} />
           <Route path='politicas-uso' element={<PoliciesPage />} />
           <Route path='*' element={<h1>404 Page Not Found</h1>} />
         </Route>
