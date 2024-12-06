@@ -23,6 +23,7 @@ import AdminUsers from './components/Pages/AdminUsers/AdminUsers.jsx'
 
 import ImagesPopUp from './components/Templates/ImagesPopUp/ImagesPopUp.jsx'
 import RentNowPopUp from './components/Templates/RentNowPopUp/RentNowPopUp.jsx'
+import WappBtn from './components/Atoms/WappBtn/WappBtn.jsx'
 
 function App () {
   const location = useLocation()
@@ -30,8 +31,9 @@ function App () {
 
   function LayoutWithNavbarAndFooter () {
     return (
-      <div className='layout bg-gray2'>
+      <div className='layout bg-gray2 relative'>
         <Header />
+        <WappBtn />
         <Outlet />
         <Footer />
       </div>
@@ -40,8 +42,9 @@ function App () {
 
   function AdmonLayoutWithNavbarAndFooter () {
     return (
-      <div className='layout'>
+      <div className='layout relative'>
         <Header />
+        <WappBtn />
         <Outlet />
         <Footer />
       </div>
