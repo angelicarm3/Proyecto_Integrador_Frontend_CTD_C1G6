@@ -49,7 +49,7 @@ const BookinCard = ({ booking }) => {
           .then((response) => {
             withReactContent(Swal).fire({
               icon: 'success',
-              text: 'Característica eliminada exitosamente',
+              text: 'Reserva eliminada exitosamente',
               showConfirmButton: false,
               timer: 3000
             })
@@ -83,7 +83,6 @@ const BookinCard = ({ booking }) => {
         <p><strong>Fecha de inicio:</strong> {formatDate(fechaInicio)}</p>
         <p><strong>Fecha de entrega:</strong> {formatDate(fechaFin)}</p>
         <p><strong>Total de días:</strong> {totalDays} {totalDays === 1 ? 'día' : 'días'}</p>
-        <p><strong>Estado:</strong> {estado ? 'Activa' : 'Inactiva'}</p>
         <p><strong>Lugar de recogida:</strong> {lugarRecogida}</p>
         <p><strong>Lugar de retorno:</strong> {lugarEntrega}</p>
 
